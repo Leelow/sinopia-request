@@ -1,13 +1,13 @@
 {
   "name": "sinopia-request",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An easy and fully auth-plugin with configuration to use an external API.",
   "repository": {
     "type": "git",
     "url": "https://github.com/Leelow/sinopia-request.git"
   },
   "main": "index.js",
-  "author": "leelow29",
+  "author": "leelow",
   "license": "MIT",
   "dependencies": {
     "crypto": "0.0.3",
