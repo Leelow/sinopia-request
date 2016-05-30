@@ -1,6 +1,6 @@
 {
   "name": "sinopia-request",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An easy and fully auth-plugin with configuration to use an external API.",
   "repository": {
     "type": "git",

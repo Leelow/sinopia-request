@@ -36,9 +36,7 @@ function SinopiaRequest( config, sinopia ) {
         };
 
         _request( options, function ( err, res, body ) {
-            console.log( route );
-            console.log( err );
-            console.log( body );
+
             if ( err ) {
                 err.status = 500;
                 return callback( err );
