@@ -2,7 +2,7 @@
 
 ```sh
 $ npm install sinopia
-$ npm install sinopia-htpasswd
+$ npm install sinopia-request
 ```
 
 ## Config
