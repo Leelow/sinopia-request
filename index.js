@@ -41,9 +41,9 @@ function SinopiaRequest( config, sinopia ) {
                 err.status = 500;
                 return callback( err );
             }
-            else if ( body === undefined || body.result === undefined ) {
+            else if (typeof body === undefined) {
                 err = new Error( 'Bad server response.' );
-                err.status = 500;
+                err.status = 400;
                 return callback( err );
             }
             else
@@ -54,7 +54,7 @@ function SinopiaRequest( config, sinopia ) {
     };
 
     this.adduser = function ( user, password, callback ) {
-        return request( user, encrypt( password ), config.adduser_route, callback );
+        return this.authenticate(user, password, callback);
     };
 
     this.authenticate = function ( user, password, callback ) {
